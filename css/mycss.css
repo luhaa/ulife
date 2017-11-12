@@ -1,0 +1,1260 @@
+
+/*index页面的样式*/
+
+.ind_1{
+    height:640px;
+    width: 100%;
+    background: url(../images/banner01.jpg) no-repeat center center;
+    background-size:cover ;
+}
+.ind_navbar{
+    height:42px;
+    background: rgba(0,0,0,.2);
+    margin-top:42px;
+}
+.ind_1:before{
+    content: '';
+    display: table;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+.ind_logo{
+    float: left;
+    width: 251px;
+    height: 74px;
+    margin-top: -14px;
+    background: url(../images/logo.png);
+}
+.ind_nav{
+    float: right;
+}
+.ind_nav ul li{
+
+    float:left;
+}
+.ind_navbar ul li a{
+    display: block;
+    font-size: 16px;
+    color:#fff;
+    padding:0 25px;
+    height: 42px;
+    line-height:42px;
+}
+.ind_navbar ul li a:hover{
+    background: rgba(0,0,0,.1);
+}
+.ind_navbar li.current a{
+    background: rgba(0,0,0,.2);
+}
+
+.ind_user{
+    float: right;
+    color: white;
+    line-height: 42px;
+    margin-left: 60px;
+}
+.ind_user a{
+    color: white;
+    font-size: 14px;
+}
+.icon_user{
+    display: inline-block;
+    /*行内元素或行内块元素要设置垂直居中必须要设置vertical-align这个属性(它是一个标准),margin-top才能调整*/
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    background: url(../images/inoclist.png) 0 0;
+    margin-right: 9px;
+    margin-top: -2px;
+}
+
+
+
+.ind_1_title{
+    margin: 140px auto 0;
+    width: 570px;
+    height: 65px;
+    background:url(../images/dazao.png);
+}
+
+/*搜索框*/
+.ind_search{
+    margin: 55px auto 0;
+    width: 760px;
+}
+.ind_search_tab li{
+    float:left;
+    color:#ccc;
+    font-size: 14px;
+    line-height: 14px;
+    margin-right:40px;
+    cursor:pointer;
+}
+.ind_search_tab li.cur{
+    color: white;
+}
+.ind_search_tab li span{
+    display: none;
+    width: 0;
+    height: 0;
+    border:7px solid transparent;
+    border-bottom-color: white;
+    margin: 0 auto;
+}
+.ind_search_tab li.cur span{
+    display: block;
+}
+
+
+
+.ind_search_form input{
+    width: 640px;
+    height: 50px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    padding: 0 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.ind_search_form button{
+    width: 120px;
+    height: 50px;
+    /*line-height: 50px;
+    text-align: center;*/
+    font-size: 16px;
+    color: white;
+    background-color: #00ae66;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+/*下面*/
+.ind_1 p{
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    margin-top: 165px;
+}
+
+
+/*第二部分*/
+.ind_2{
+    padding:36px 0 48px 0;
+}
+
+.ind_2 ul li{
+    width: 33%;
+    float: left;
+    text-align: center;
+    padding:0 90px;
+    box-sizing: border-box;
+    line-height: 18px;
+}
+
+
+.ind_2 span{
+    display: block;
+    width: 72px;
+    height: 72px;
+    margin: 0 auto;
+    background: url(../images/inoclist.png) no-repeat;
+}
+.ind_2 li:first-child span{
+    background-position: 0 -35px;
+}
+.ind_2 li:nth-child(2) span{
+    background-position: 0 -104px;
+}
+.ind_2 li:last-child span{
+    background-position: 5px -190px;
+}
+
+.ind_2 li h3{
+    font-size: 18px;
+    line-height: 40px;
+    font-family: Adobe 黑体 Std;
+    margin-top: 20px;
+    text-align: center;
+}
+.ind_2 li p{
+    text-align: center;
+    color:#999;
+}
+
+
+/*第三部分*/
+.ind_3{
+    height: 500px;
+    width: 100%;
+    background: url(../images/banner02.jpg) no-repeat center center;
+    background-size: cover;
+}
+.ind_3 img{
+    margin-top: 90px;
+    margin-bottom: 40px;
+}
+.ind_3 p{
+    width: 470px;
+    font-family: "Adobe 黑体 Std";
+    font-weight: bold;
+    font-size: 14px;
+    color:#333;
+}
+
+.ind_3 .ma{
+    height: 100px;
+    margin-top: 42px;
+    background: url(../images/inoclist.png) no-repeat 0 -280px;
+}
+
+.ind_3 .ma button{
+    width: 136px;
+    height: 45px;
+    border-radius: 3px;
+    border:none;
+    margin-left: 120px;
+    background: #00ae66;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+.ind_3 .ma button:first-child{
+    margin-bottom: 10px;
+}
+
+
+/*租房列表页样式 zf_list*/
+
+/*面包屑导航*/
+.breadcrumb{
+    height: 55px;
+    line-height: 55px;
+}
+.breadcrumb a{
+    color: #666;
+}
+.breadcrumb a:hover{
+    color: #e4393c;
+}
+
+/*分类*/
+
+/*第1部分*/
+.types_tab{
+    height: 48px;
+    box-sizing: border-box;
+    border-bottom:2px solid #39ac6a;
+    background: #f5f5f5;
+}
+.types_tab li{
+    float: left;
+}
+.types_tab li.cur{
+    background: #39ac6a;
+}
+.types_tab a{
+    display: block;
+    padding: 0 30px;
+    height: 48px;
+    line-height: 48px;
+    color: #666;
+    font-size: 14px;
+}
+.types_tab li.cur a{
+    color: white;
+}
+
+/*第2部分*/
+.types_select{
+    padding: 25px 25px;
+    border-left:1px solid #ddd;
+    border-right:1px solid #ddd ;
+}
+.types_select dl{
+    margin-bottom: 10px;
+}
+.types_select dt{
+    float: left;
+    font-weight: bold;
+}
+.types_select dd{
+    float: left;
+    margin-left: 15px;
+    width: 880px;
+
+}
+.types_select li{
+    float: left;
+}
+.types_select input{
+    width: 42px;
+    height: 24px;
+    box-sizing: border-box;
+}
+
+
+.option_list li{
+    padding: 0 15px;
+}
+
+.option_list_sub{
+    border:1px solid #ddd;
+    border-radius:3px;
+    background:#f5f5f5 ;
+    margin-left: 15px;
+    padding:10px 15px ;
+    margin-top: 15px;
+}
+.option_list_sub li{
+    line-height: 28px;
+    padding: 0 10px;
+
+}
+
+.types_select li:hover{
+    color: #e4393c;
+}
+.types_select li.cur{
+    color:#39ac6a;
+    font-weight: bold;
+}
+
+/*第3部分*/
+.types_now{
+    border:1px solid #ddd;
+    background: #fbfbfb;
+    height: 50px;
+    box-sizing: border-box;
+    padding-left:25px;
+}
+.types_now dl{
+    margin-top: 12px;
+}
+.types_now dt{
+    float: left;
+    font-weight: bold;
+    margin-top: 1px;
+}
+.types_now dd{
+    float: left;
+    margin-left: 20px;
+}
+.types_now dd span{
+    padding-left:12px;
+    border:1px solid #f6b07f;
+    box-sizing: border-box;
+    margin-right: 10px;
+    display: inline-block;
+}
+.types_now dd span i{
+    float: right;
+    margin-left: 12px;
+    width: 23px;
+    height: 24px;
+    background:#f6b07f url(../images/inoclist.png) no-repeat 5px -454px;
+}
+.types_now dd a{
+    display: inline-block;
+    margin-left: 15px;
+    text-decoration: underline;
+    padding-left: 20px;
+    background: url(../images/inoclist.png) no-repeat 0 -487px;
+}
+
+/*第三部分*/
+.zf_list_box{
+    margin-top: 25px;
+}
+.zf_list_head{
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    border-top: 2px solid #39ac6a;
+    border-bottom: 1px solid #dddddd;
+    background: #fbfbfb;
+}
+.zf_list_head div{
+    float: left;
+    font-weight: bold;
+}
+.zf_list_head div b{
+    color: #e4393c;
+}
+
+.zf_list_head ul{
+    float: right;
+}
+.zf_list_head ul li{
+    float: left;
+    padding: 0 15px;
+}
+.zf_list_head ul li{
+    border:1px solid transparent;
+    border-top:0;
+    border-bottom: 0;
+}
+.zf_list_head ul li.cur{
+    border:1px solid #ddd;
+    border-top:0;
+    border-bottom: 0;
+    color: #e4393c;
+    background: #f5f5f5;
+}
+.zf_list_head ul li span{
+    float: right;
+    width: 11px;
+    height: 12px;
+    margin-top: 19px;
+    margin-left: 3px;
+    background: url(../images/inoclist.png) 0px -510px;
+}
+
+/*房源列表图*/
+
+.zf_list li{
+    padding: 25px 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+.zf_list li>a{
+    float: left;
+}
+.zf_list li>a>img{
+    width: 160px;
+    height: 120px;
+    display: block;
+}
+.zf_list li>div{
+    float: left;
+    margin-left: 30px;
+}
+.zf_list li>div h2{
+    font-size: 18px;
+    line-height: 50px;
+}
+.zf_list li>div>p{
+    color: #666;
+    font-size: 14px;
+    line-height: 32px;
+}
+.zf_list li>div>p>span{
+    color:#888;
+}
+.zf_list li>div>p>span:after{
+    content: "|";
+    padding: 15px;
+    color: #ddd;
+}
+.zf_list li>div>p>span:last-child:after{
+    display: none;
+}
+.zf_list li>span{
+    float: right;
+    color: #e4393c;
+    margin-top: 45px;
+}
+.zf_list li>span strong{
+    font-size:30px;
+}
+
+/*分页条*/
+.zf_pages{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.zf_pages a{
+    display: inline-block;
+    line-height: 28px;
+    font-size: 14px;
+    color: #888;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    margin-left: 10px;
+}
+.zf_pages a.cur{
+    border-color: #39ac6a;
+    background: #39ac6a;
+    color: white;
+}
+.zf_pages a:hover{
+    border-color: #39ac6a;
+}
+
+.zf_pages button:last-of-type{
+    margin-left: 10px;
+}
+.zf_pages button{
+    width: 60px;
+    height: 30px;
+    border:1px solid #ddd;
+    box-sizing: border-box;
+    background: #fff;
+    font-size: 14px;
+    color: #999;
+}
+.zf_pages button.disabled{
+    color: #ccc;
+    border-color: #eee;
+}
+
+
+/*注册页面的样式 register*/
+.register{
+    width: 400px;
+    margin:65px auto 125px;
+}
+.register h2{
+    font-size: 24px;
+    font-weight: normal;
+}
+.register h2 a{
+    float: right;
+    font-size: 14px;
+    color: #39ac6a;
+}
+.register h2 a:hover{
+    color: #2ea260;
+}
+
+.register ul{
+    border:1px solid #ddd;
+    border-radius: 3px;
+    margin-top: 25px;
+}
+.register ul li{
+    position: relative;
+    height: 60px;
+    border-bottom: 1px solid #ddd;
+}
+.register ul li:last-child{
+    border-bottom:none;
+}
+.register ul input{
+    height: 100%;
+    width: 100%;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.register ul li u{
+    position: absolute;
+    top:21px;
+    right: -35px;
+    width: 20px;
+    height: 20px;
+    background: #39ac6a url(../images/inoclist.png) no-repeat 4px -514px;
+    border-radius: 50%;
+}
+.register ul li span{
+    position: absolute;
+    top: 16px;
+    left: 412px;
+    white-space: nowrap;/*文本不换行*/
+    height: 30px;
+    line-height: 30px;
+    background: #e26058;
+    padding: 0 12px;
+    box-sizing: border-box;
+    color: white;
+    font-size: 15px;
+    border-radius: 3px;
+}
+.register ul li span:after{
+    content: '';
+    position: absolute;
+    top:10px;
+    left: -8px;
+    width: 0;
+    height: 0;
+    border:4px solid transparent;
+    border-right-color: #e26058;
+}
+
+.register p{
+    line-height: 70px;
+    font-size: 14px;
+}
+
+.register p a{
+    color: #ff6600;
+}
+.register p a:hover{
+    color: #e4393c;
+}
+
+.register button{
+    width: 100%;
+    height: 60px;
+    background: #39ac6a;
+    border:none;
+    color: white;
+    font-size: 20px;
+    border-radius: 3px;
+}
+.register button:hover{
+    background:#1fa659 ;
+}
+
+
+/*登录页面的样式 login*/
+.login_bg{
+    position: fixed;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+}
+.login{
+    position: absolute;
+    width: 450px;
+    height: 330px;
+    background:#f2f2f2;
+    padding: 30px 50px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.login span{
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: 10px;
+    right: 10px;
+    background: #ccc url(../images/inoclist.png) no-repeat 4px -455px;
+    border-radius: 50%;
+}
+.login span:hover{
+    background-color: #39ac6a;
+    cursor: pointer;
+}
+
+.login h3{
+    width: 350px;
+    font-size: 20px;
+}
+.login h3 a{
+    float: right;
+    font-size: 14px;
+    color: #ff6600;
+}
+.login ul{
+    margin: 25px 0;
+    width: 350px;
+    height: 123px;
+    border:1px solid #ddd;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.login ul li{
+    height: 60px;
+    border-bottom: 1px solid #ddd;
+}
+.login ul li:last-child{
+    border-bottom: none;
+}
+.login input{
+    font-size: 15px;
+    color: #ccc;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    padding-left: 52px;
+}
+
+.login button{
+    width: 350px;
+    height: 60px;
+    background: #39ac6a;
+    font-size: 20px;
+    color: white;
+    border:none;
+}
+.login p{
+    font-size: 14px;
+    color: #e4393c;
+    margin-top: 10px;
+    text-align: center;
+    display: none;
+}
+
+
+/*经纪人页面*/
+
+/*搜索经纪人样式和搜索房源的样式一样,共用样式*/
+
+/*经纪人列表*/
+.jjr_list_box{
+    margin-top: 20px;
+}
+.jjr_list_head b{
+    color: #e4393c;
+}
+.jjr_list_head{
+    padding: 10px 0 10px 15px;
+    font-weight: bold;
+    border-top:2px solid #39ac6a;
+    border-bottom: 1px solid #ddd;
+    background: #fbfbfb;
+}
+
+.jjr_list li{
+    padding: 25px 40px 25px 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+.jjr_list li a{
+    float: left;
+    height: 120px;
+}
+.jjr_list li div{
+    float: left;
+    margin-left: 35px;
+    margin-top: 5px;
+}
+.jjr_list li div p{
+    color: #888;
+    font-size: 14px;
+    line-height: 40px;
+}
+.jjr_list li div>span{
+    display: block;
+    color: #4285f4;
+    font-size: 24px;
+    height: 36px;
+    line-height: 36px;
+    background: #e8f0fe;
+    padding-right: 15px;
+}
+.jjr_list li div>span i{
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: 10px;
+    width: 36px;
+    height: 36px;
+    background:#4285f4 url(../images/inoclist.png) no-repeat 8px -592px ;
+}
+.jjr_list li>span{
+    float: right;
+    display: block;
+    color: #39ac6a;
+    font-size: 14px;
+    border:1px solid #39ac6a;
+    padding: 9px 17px;
+    border-radius: 3px;
+    margin-top: 43px;
+}
+
+/*分页条的样式也是一样的*/
+
+
+/*新闻详情页 news_details*/
+.news_main{
+    border:1px solid #ddd;
+    border-top:2px solid #39ac6a;
+    padding: 55px 50px;
+    margin-bottom: 60px;
+}
+.news_title{
+    text-align: center;
+    border-bottom:1px solid #ddd ;
+}
+.news_title p{
+    color: #999;
+    font-size: 14px;
+    line-height: 40px;
+}
+
+.news_contain p{
+    font-size: 15px;
+    line-height: 30px;
+    margin-top: 45px;
+    text-indent: 2em;
+    color: #666;
+}
+
+
+/*店铺页 dianpu.html*/
+.dianpu_name{
+    border-top:2px solid #39ac6a;
+    border-bottom:1px solid #ddd;
+    background: #fbfbfb;
+    padding: 30px 0 20px 25px;
+}
+.dianpu_name p{
+    line-height: 28px;
+    color: #999;
+}
+/*主要部分*/
+.dianpu_info{
+    margin-top: 25px;
+}
+.dianpu_list_box{
+    float: left;
+    width: 720px;
+}
+.dianpu_list_tabs{
+    width: 100%;
+    border-bottom: 2px solid #39ac6a;
+    background: #f5f5f5;
+}
+.dianpu_list_tabs li{
+    font-size: 18px;
+    float: left;
+    padding: 15px 40px;
+    color: #39ac6a;
+}
+.dianpu_list_tabs li.cur{
+    color: white;
+    background: #39ac6a;
+}
+/*.dianpu_list_tabs li span{
+    display: none;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border: 12px solid transparent;
+    border-top-color:#39ac6a ;
+}
+.dianpu_list_tabs li.cur span{
+    display: block;
+}*/
+
+/*列表*/
+.dianpu_list{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.dianpu_list li{
+    margin-bottom: 20px;
+}
+.dianpu_list li h3{
+    color: #4285f4;
+    font-size: 14px;
+}
+.dianpu_list li p{
+    color: #888;
+}
+.dianpu_list li b{
+    color: #666;
+}
+.dianpu_list li h2{
+    color: #e4393c;
+    font-size: 20px;
+}
+.dianpu_list li h2 span{
+    font-size: 12px;
+}
+
+/*右边*/
+.jingjiren_info{
+    float: right;
+    width: 260px;
+    margin-left: 20px;
+    box-sizing: border-box;
+    border:1px solid #ddd;
+    padding-bottom: 20px;
+}
+.jingjiren_info_title{
+    color: #666;
+    font-size: 16px;
+    background: #f5f5f5;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 15px;
+    margin-bottom: 30px
+}
+.jingjiren_info_pic{
+    ;
+    margin: 0 auto;
+    text-align: center;
+}
+.jingjiren_info_tel{
+    width: 220px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.jingjiren_info_tel p{
+    font-size: 14px;
+    color: #888;
+    line-height: 28px;
+}
+.jingjiren_info_tel span{
+    display: block;
+    width: 100%;
+    background:#e8f0fe;
+    color: #4285f4;
+    font-size: 24px;
+    height: 36px;
+    line-height: 36px;
+}
+.jingjiren_info_tel span i{
+    display: inline-block;
+    vertical-align: middle;
+    width: 36px;
+    height: 36px;
+    margin-top: -3px ;
+    margin-right: 10px;
+    background:#4285f4 url(../images/inoclist.png) no-repeat 8px -592px;
+}
+
+
+/*新闻页 news.html*/
+.news_pic>img{
+    float: left;
+    vertical-align: top;
+}
+
+.news_pic p{
+    float: right;
+    width: 260px;
+}
+.news_pic p img:first-child{
+    margin-bottom: 12px;
+}
+.news_tab{
+    border-bottom:2px solid #39ac6a;
+    background: #f5f5f5;
+}
+.news_tab li{
+    float: left;
+    padding: 15px 25px;
+    font-size: 18px;
+}
+.news_tab li.cur{
+    color: white;
+    background: #39ac6a;
+}
+
+.news_list li{
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+.news_list li div{
+    float: left;
+    width: 75%;
+    margin-top: 5px;
+}
+.news_list li div p{
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+.news_list li div span{
+    font-size: 14px;
+    color: #999;
+}
+.news_list img{
+    float: right;
+
+}
+.loadMore{
+    text-align: center;
+}
+.loadMore button{
+    padding: 10px 15px;
+    background: #39ac6a;
+    color: white;
+    font-size: 14px;
+    margin-top: 50px;
+    margin-bottom: 75px;
+    border:0;
+}
+
+/*个人中心系列样式基本一样  所以通用*/
+
+/*个人修改密码页 user_changepwd.html*/
+.user_changepwd{
+    margin-bottom: 150px;
+}
+.user_left{
+    float: left;
+    width: 200px;
+    height: 420px;
+    background: #f5f5f5;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+.user_left li{
+    padding: 10px 0;
+}
+.user_left li:hover{
+    background:#50cd85 ;
+    color: white;
+}
+.user_left li.cur{
+    color: white;
+    background: #39ac6a;
+}
+
+.user_right{
+    float: right;
+    width: 720px;
+    margin-left: 80px;
+}
+.user_tab{
+    border-bottom: 2px solid #39ac6a;
+    background: #f5f5f5;
+}
+.user_tab li{
+    float: left;
+    padding: 15px 20px;
+    font-size: 18px;
+}
+.user_tab li.cur{
+    background: #39ac6a;
+    color: white;
+}
+.user_right dl{
+    margin-bottom: 20px;
+}
+.user_right dt{
+    float: left;
+    width: 90px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 16px;
+    color: #666;
+    text-align: right;
+}
+.user_right dd{
+    float: right;
+    width: 320px;
+    height: 38px;
+    box-sizing: border-box;
+}
+.user_right input[type='text']{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.change{
+    width: 450px;
+    margin-top: 70px;
+    margin-left: 100px;
+}
+.change button{
+    float: right;
+    width: 320px;
+    height: 38px;
+    background: #39ac6a;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    margin-top: 75px;
+}
+
+/*user_favorite.html 列表样式沿用店铺列表样式*/
+.user_favorite{
+    margin-bottom: 80px;
+}
+
+/*user_personal.html*/
+.user_personal{
+    margin-bottom: 180px;
+}
+.user_personal label{
+    margin-right: 30px;
+}
+.check{
+    font-size: 14px;
+    color: #666;
+    line-height: 38px;
+}
+
+/*user.html*/
+.user{
+    margin-bottom: 20px;
+}
+.user h2{
+    color: #666;
+    line-height: 40px;
+}
+.user p{
+    font-size: 14px;
+    color: #999;
+}
+.user h2 b{
+    color: #e4393c;
+}
+.user_info{
+    margin-bottom: 50px;
+}
+.user_info img{
+    float: left;
+    margin-right: 30px;
+}
+
+/*zf_details.html*/
+
+.zf_detetails_title{
+    border:1px solid #ddd;
+    border-top:2px solid #39ac6a;
+    background: #fbfbfb;
+    padding: 20px 35px 20px 25px;
+}
+.zf_detetails_title h2{
+    font-size: 24px;
+    color: #333;
+    line-height: 30px;
+}
+.zf_detetails_title p{
+    color: #999;
+}
+.zf_detetails_title a{
+    float: right;
+    border:1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px 15px 5px 35px;
+    margin-top: -43px;
+    background: url(../images/inoclist.png) no-repeat 10px -622px;
+}
+.zf_detetails_box{
+    border:1px solid #ddd;
+    border-top:0;
+    padding: 40px 35px;
+}
+/*图片信息*/
+.zf_detetails_pic{
+    float: left;
+    width: 460px;
+}
+.zf_detetails_pic_min ul{
+    float: left;
+    width: 400px;
+    height: 66px;
+    margin-left: 11px;
+    overflow: hidden;
+}
+.zf_detetails_pic_min ul li{
+    height: 66px;
+    float: left;
+    margin-right: 12px;
+
+}
+.zf_detetails_pic_min a{
+    width: 24px;
+    height: 66px;
+    background: #7f7f7f url(../images/inoclist.png) no-repeat;
+}
+.zf_detetails_pic_min a.left{
+    float: left;
+    background-position: -23px -607px;
+}
+.zf_detetails_pic_min a.right{
+    float: right;
+    background-position: -52px -607px;
+}
+
+/*右侧具体信息*/
+.zf_detetails_info{
+    float: right;
+    width: 400px;
+}
+.zf_detetails_info p{
+    font-size: 40px;
+    color: #e4393c;
+}
+.zf_detetails_info p b{
+    font-size: 12px;
+}
+.zf_detetails_info ul{
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+}
+.zf_detetails_info ul li{
+    color: #333;
+    line-height: 35px;
+}
+.zf_detetails_info ul li div{
+    display: inline;
+    margin-left: 120px; ;
+}
+.zf_detetails_info ul span{
+    color: #999;
+}
+.jjr_box{
+    margin-top: 30px;
+}
+.jjr_box img{
+    float: left;
+    width: 80px;
+    border-radius: 50%;
+
+}
+.jjr_info{
+    float: left;
+    margin-left: 20px;
+}
+.jjr_info p{
+    font-size: 18px;
+    color:#333 ;
+}
+.jjr_info span{
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 30px;
+    color: white;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    background:#e26058 ;
+}
+.jjr_info span i{
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -6px;
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+    background: #e4393c url(../images/inoclist.png) no-repeat -47px -548px;
+}
+
+.zf_detetails_text{
+    margin-top: 30px;
+}
+.zf_detetails_text_tab{
+    background: #f5f5f5;
+    border-bottom: 2px solid #39ac6a;
+    margin-bottom: 30px;
+}
+.zf_detetails_text_tab li{
+    float: left;
+    padding: 12px 20px;
+    font-size: 18px;
+}
+.zf_detetails_text_tab li.cur{
+    background: #39ac6a;
+    color: white;
+}
+.zf_detetails_text p{
+    font-size: 15px;
+    color: #666;
+    line-height: 30px;
+}
+.zf_detetails_text .pic{
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+

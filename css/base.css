@@ -1,0 +1,224 @@
+
+/*css reset*/
+body{
+    margin:0;
+     font-family: "Microsoft Sans Serif";
+    font-size: 12px;
+    line-height:24px;
+    color: #333333;
+    background-color: #fff;
+}
+ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,p,input,button{
+    margin: 0;
+    padding: 0;
+}
+input,button{
+    font-family: "Microsoft Sans Serif";
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333333;
+}
+a:hover{
+    color: #e4393c;
+    text-decoration: none;
+}
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+.clearfloat:after{
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+
+/*通用头部的样式*/
+
+header{
+    height: 125px;
+    border-bottom: 1px solid #ddd;
+}
+.head{
+    height: 55px;
+    background: #39ac6a;
+}
+/*导航条*/
+.zf_nav li{
+    float: left;
+}
+.zf_nav li a{
+    display: block;
+    padding:0 25px;
+    color: white;
+    font-size: 16px;
+    line-height: 55px;
+    cursor: pointer;
+}
+.zf_nav li a:hover{
+    background:#73AC87 ;
+}
+.zf_nav li.cur a{
+    background:#31925a ;
+}
+
+.zf_user{
+    float: right;
+    color: white;
+    line-height: 55px;
+}
+.zf_user a{
+    color: white;
+    font-size: 14px;
+}
+.icon_user{
+    display: inline-block;
+    vertical-align: top;
+    width: 16px;
+    height: 16px;
+    background: url(../images/inoclist.png) 0 0;
+    margin-right: 10px;
+    margin-top: 19.5px;
+}
+
+/*搜索框*/
+.zf_search{
+    height: 70px;
+}
+.zf_search h1{
+    float: left;
+    margin-top: 14px;
+}
+.zf_search h1 a{
+    display: block;
+    width: 144px;
+    height: 42px;
+    background: url(../img-house/zf_logo.png);
+}
+
+.search{
+    float: right;
+    height: 36px;
+    margin-top: 17px;
+}
+.select_menu{
+    float: left;
+    position: relative;
+}
+.select_menu>span{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 99px;
+    height: 36px;
+    line-height: 36px;
+    padding-left: 25px;
+    border:1px solid #ddd;
+    border-right: 0;
+    font-size: 14px;
+    color: #666;
+    background: #eee;
+    border-radius:3px 0 0 3px;
+}
+.select_menu>span>i{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border:4px solid transparent;
+    border-top-color: #999;
+
+    /*背景图老是出不来*/
+    /*width: 8px;
+    height: 4px;
+    background: url(../images/inoclist.png) no-repeat 0 -450px;*/
+    vertical-align: middle;
+    margin-left: 20px;
+}
+.select_menu_dropdown{
+    display: none;
+    border:1px solid #ddd;
+    border-top:0;
+    font-size: 14px;
+    color: #666;
+    position: absolute;
+    top: 36px;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.select_menu_dropdown li{
+    padding: 0 15px;
+    line-height: 36px;
+}
+.select_menu_dropdown li:hover{
+    background: #eee;
+}
+.select_menu:hover .select_menu_dropdown{
+    display: block;
+}
+
+
+.search input{
+    width: 400px;
+    height: 36px;
+    float: left;
+    box-sizing: border-box;
+}
+.search button{
+    width: 100px;
+    height: 36px;
+    border-radius: 0 3px 3px 0;
+    background: #e26058;
+    border:none;
+    color:white ;
+    float: left;
+    font-size: 16px;
+}
+
+
+/*通用的footer样式*/
+.footer{
+    height: 160px;
+    width: 100%;
+    background: #333;
+}
+.zuo{
+    float: left;
+    margin-top: 30px;
+}
+.zuo ul{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #999;
+}
+.zuo li{
+    float: left;
+    margin-right: 10px;
+}
+.zuo li a{
+    color: white;
+    font-size: 14px;
+}
+.zuo p{
+    color:#999999;
+}
+
+.you{
+    float: right;
+    width: 290px;
+    height: 50px;
+    margin-right: 30px;
+    margin-top: 50px;
+    background: url(../images/inoclist.png) no-repeat 0 -400px;
+}
+
+.you p{
+    margin-left: 60px;
+    color: #aaaaaa;
+    font-size: 18px;
+}
