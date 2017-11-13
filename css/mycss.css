@@ -544,6 +544,7 @@
     box-sizing: border-box;
 }
 .register ul li u{
+    display: none;
     position: absolute;
     top:21px;
     right: -35px;
@@ -553,6 +554,7 @@
     border-radius: 50%;
 }
 .register ul li span{
+    display: none;
     position: absolute;
     top: 16px;
     left: 412px;
@@ -600,6 +602,9 @@
 }
 .register button:hover{
     background:#1fa659 ;
+}
+.register button.disabled{
+    background: #ccc;
 }
 
 
