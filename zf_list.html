@@ -32,8 +32,9 @@
             <dl class="clearfloat">
                 <dt>区域:</dt>
                 <dd>
-                    <ul class="option_list clearfloat">
-                        <li>不限</li>
+                    <ul class="option_list clearfloat" id="area">
+                        <li data-areaId='0'>不限</li>
+                        <!--ul里面的其他内容都应是动态生成的-->
                         <li>东城</li>
                         <li>西城</li>
                         <li>朝阳</li>
@@ -45,7 +46,7 @@
                     </ul>
 
                     <!--二级选项-->
-                    <ul class="option_list_sub clearfloat">
+                    <ul class="option_list_sub clearfloat" id="subArea">
                         <li>不限</li>
                         <li>安宁庄</li>
                         <li>白石桥</li>
@@ -74,15 +75,15 @@
             <dl class="clearfloat">
                 <dt>租金:</dt>
                 <dd>
-                    <ul class="option_list clearfloat">
-                        <li class="cur">不限</li>
-                        <li>1500元以下</li>
-                        <li>1500-2500元</li>
-                        <li>2500-3500元</li>
-                        <li>3500-4500元</li>
-                        <li>4500-5500元</li>
-                        <li>5500-6500元</li>
-                        <li>6500元以上</li>
+                    <ul class="option_list clearfloat" id="price">
+                        <li class="cur" data-min="0" data-max="20000">不限</li>
+                        <li data-min="0" data-max="1500">1500元以下</li>
+                        <li data-min="1500" data-max="2500">1500-2500元</li>
+                        <li data-min="2500" data-max="3500">2500-3500元</li>
+                        <li data-min="3500" data-max="4500">3500-4500元</li>
+                        <li data-min="4500" data-max="5500">4500-5500元</li>
+                        <li data-min="5500" data-max="6500">5500-6500元</li>
+                        <li data-min="6500" data-max="20000">6500元以上</li>
                         <li>
                             <input type="text">
                             -
@@ -96,17 +97,17 @@
             <dl class="clearfloat">
                 <dt>面积:</dt>
                 <dd>
-                    <ul class="option_list clearfloat">
-                        <li class="cur">不限</li>
-                        <li>30平以下</li>
-                        <li>30-50平</li>
-                        <li>50-70平</li>
-                        <li>70-90平</li>
-                        <li>90-120平</li>
-                        <li>120-140平</li>
-                        <li>140-160平</li>
-                        <li>160-200平</li>
-                        <li>200平以上</li>
+                    <ul class="option_list clearfloat" id="size">
+                        <li class="cur" data-min="0" data-max="20000">不限</li>
+                        <li data-min="0" data-max="30">30平以下</li>
+                        <li data-min="30" data-max="50">30-50平</li>
+                        <li data-min="50" data-max="70">50-70平</li>
+                        <li data-min="70" data-max="90">70-90平</li>
+                        <li data-min="90" data-max="120">90-120平</li>
+                        <li data-min="120" data-max="140">120-140平</li>
+                        <li data-min="140" data-max="160">140-160平</li>
+                        <li data-min="160" data-max="200">160-200平</li>
+                        <li data-min="200" data-max="20000">200平以上</li>
                     </ul>
                 </dd>
             </dl>
@@ -114,14 +115,14 @@
             <dl class="clearfloat">
                 <dt>房型:</dt>
                 <dd>
-                    <ul class="option_list clearfloat">
-                        <li class="cur">不限</li>
-                        <li>一室</li>
-                        <li>两室</li>
-                        <li>三室</li>
-                        <li>四室</li>
-                        <li>五室</li>
-                        <li>五室以上</li>
+                    <ul class="option_list clearfloat" id="houseType">
+                        <li data-houseType="0" class="cur">不限</li>
+                        <li data-houseType="一室">一室</li>
+                        <li data-houseType="两室">两室</li>
+                        <li data-houseType="三室">三室</li>
+                        <li data-houseType="四室">四室</li>
+                        <li data-houseType="五室">五室</li>
+                        <li data-houseType="五室以上">五室以上</li>
                     </ul>
                 </dd>
             </dl>
@@ -129,10 +130,10 @@
             <dl class="clearfloat">
                 <dt>方式:</dt>
                 <dd>
-                    <ul class="option_list clearfloat">
-                        <li class="cur">不限</li>
-                        <li>整租</li>
-                        <li>合租</li>
+                    <ul class="option_list clearfloat" id="leaseWay">
+                        <li data-leaseWay="0" class="cur">不限</li>
+                        <li data-leaseWay="整租">整租</li>
+                        <li data-leaseWay="合租">合租</li>
                     </ul>
                 </dd>
             </dl>
@@ -241,9 +242,9 @@
     </div>
     <!--分页条-->
     <div class="zf_pages">
-        <button type="button" class="disabled">上一页</button>
+        <a class="disabled">上一页</a>
         <a class="cur" href="">1</a><a href="">2</a><a href="">3</a><a href="">4</a><a href="">5</a><a href="">6</a>
-        <button type="button">下一页</button>
+        <a>下一页</a>
     </div>
 </section>
 <!--第四部分-->

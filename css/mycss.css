@@ -467,11 +467,9 @@
 }
 .zf_pages a{
     display: inline-block;
-    line-height: 28px;
     font-size: 14px;
     color: #888;
-    width: 30px;
-    height: 30px;
+    padding:3px 10px;
     border: 1px solid #ddd;
     box-sizing: border-box;
     margin-left: 10px;
@@ -484,20 +482,7 @@
 .zf_pages a:hover{
     border-color: #39ac6a;
 }
-
-.zf_pages button:last-of-type{
-    margin-left: 10px;
-}
-.zf_pages button{
-    width: 60px;
-    height: 30px;
-    border:1px solid #ddd;
-    box-sizing: border-box;
-    background: #fff;
-    font-size: 14px;
-    color: #999;
-}
-.zf_pages button.disabled{
+.zf_pages a.disabled{
     color: #ccc;
     border-color: #eee;
 }
@@ -973,14 +958,31 @@
 .loadMore{
     text-align: center;
 }
-.loadMore button{
+.loadMore span{
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 14px;
+    margin-top: 50px;
+    margin-bottom: 75px;
+    color: #aaaaaa;
+}
+.loadMore span.more{
+    display: inline-block;
     padding: 10px 15px;
     background: #39ac6a;
     color: white;
     font-size: 14px;
     margin-top: 50px;
     margin-bottom: 75px;
-    border:0;
+    cursor: pointer;
+}
+.loadMore span.icon{
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 14px;
+    margin-top: 50px;
+    margin-bottom: 75px;
+    background: url(../images/load.gif);
 }
 
 /*个人中心系列样式基本一样  所以通用*/

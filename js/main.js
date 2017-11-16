@@ -134,3 +134,16 @@ function navText(text) {
         }
     })
 }
+
+//时间转换函数
+function dateFormat(time){
+    var t=new Date(time);
+    //补全双数
+    var tf=function (i) {
+        return i>9?i:'0'+i;
+    };
+    var year=t.getFullYear();
+    var month=tf(t.getMonth()+1);
+    var day=tf(t.getDate());
+    return year+'-'+month+'-'+day;
+}

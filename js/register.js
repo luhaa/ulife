@@ -14,7 +14,7 @@ $(function () {
             $('tijiao').prop('disabled',true);
         }*/
         /*简写*/
-        $('tijiao').prop('disabled',!$(this).prop('checked')).toggleClass('disabled');
+        $('#tijiao').prop('disabled',!$(this).prop('checked')).toggleClass('disabled');
     });
 
     //提交注册
@@ -22,6 +22,7 @@ $(function () {
         var rphone=phoneCheck();
         var rupwd1=upwd1Check();
         var rupwd2=upwd2Check();
+
         if(rphone&&rupwd1&&rupwd2){
             nickName=$.trim($('#nickName').val());
             $.ajax({
@@ -29,7 +30,7 @@ $(function () {
                 url:'php/user_register.php',
                 data:{phone:uphone,upwd:upwd2,nickName:nickName},
                 success:function (d) {
-                    console.log(d);
+                    console.log("注册信息返回值:"+d);
                     if(d.code==1){
                         sessionStorage.uid=d.userId;
                         sessionStorage.phone=d.phone;
@@ -77,7 +78,7 @@ $(function () {
             data:{phone:uphone},
             async:false,
             success:function (d) {
-                console.log(d);
+                console.log("手机号校验返回值:"+d);
                 if(d.code==1){
                     back=true;
                 }else {
